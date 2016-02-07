@@ -9,18 +9,11 @@
     %dd{class: "#{Submission::STATUS_MAPPING[@submission.status]}"}= @submission.status
 
 
-
-  %dl
-    %dt Język
   - if @submission.polish_language?
     = image_tag('pl.png')
   - else
     = image_tag('gb.png')
-
   %dl
-  %dl
-  %dt Język
-  %dd= @submission.language
   %dl
     %dt Redaktor
     %dd
