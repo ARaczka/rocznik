@@ -13,14 +13,13 @@
     - else
       = image_tag('gb.png')
   %dl
-  %dl
     %dt Redaktor
     %dd
       - if @submission.person
         = link_to @submission.editor, @submission.person
       - else
         = @submission.editor
-  %dl
+  %dl 
     %dt Otrzymano
     %dd= @submission.received.strftime("%d-%m-%Y")
   %dl
